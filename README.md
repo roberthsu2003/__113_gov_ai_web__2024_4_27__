@@ -4,4 +4,3 @@
 ## 上課網址
 https://meet.google.com/jgd-ngke-aca
 
-### [link](./link/)
