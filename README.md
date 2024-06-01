@@ -4,9 +4,7 @@
 ## 上課網址
 https://meet.google.com/jgd-ngke-aca
 
-
-
-## 這是在codespace的修改
+## 我手動更改的
 
 
 
