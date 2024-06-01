@@ -4,7 +4,6 @@
 ## 上課網址
 https://meet.google.com/jgd-ngke-aca
 
-## 我手動更改的
 
 
 
