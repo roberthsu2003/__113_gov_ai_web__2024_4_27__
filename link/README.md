@@ -22,5 +22,11 @@ https://youtube.com/live/cPZn_HzrKtk
 #### [2024_05_25_下午]
 https://youtube.com/live/dgfbY_Ympsw
 
+#### [2024_06_01_上午]
+https://youtube.com/live/OvYFVgGBm88
+
+#### [2024_06_01_下午]
+https://youtube.com/live/y32VEM9pfOw
+
 
 
