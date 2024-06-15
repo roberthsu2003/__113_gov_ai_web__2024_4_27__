@@ -1,3 +1,6 @@
 pydantic
 requests
 streamlit
+numpy
+pandas
+matplotlib
