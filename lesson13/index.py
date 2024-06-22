@@ -46,10 +46,6 @@ with st.form('bmi form',border=False):
             txt = "重度肥胖"
 
     
-
-
-        
-
         
 st.markdown(f'## :orange[{st.session_state.bmi_result}]')
 st.markdown(f'#### :black[{txt}]')
