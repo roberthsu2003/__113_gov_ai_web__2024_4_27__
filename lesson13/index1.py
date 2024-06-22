@@ -26,10 +26,14 @@ if 'bmi_result' not in st.session_state:
     #st.session_state.weight = 30
 
 
+def clear():
+    st.session_state.height = 100
+    st.session_state.weight = 30
+
 with st.form('bmi form',border=False):
     height = st.slider(":green[選擇身高(cm)]",max_value=250,min_value=100,key="height")
     weight = st.number_input(":green[選擇體重(kg)]",max_value=200,min_value=30,key="weight")   
-    txt=''
+    
     if st.form_submit_button("BMI計算"):
         st.session_state.bmi_result = round( weight / ((height/100) ** 2),1 )            
         if st.session_state.bmi_result < 18.5:
@@ -45,16 +49,17 @@ with st.form('bmi form',border=False):
         else:
             txt = "重度肥胖"
 
-    
+    st.form_submit_button("清除內容",on_click=clear)
 
 
         
 
         
-st.markdown(f'## :orange[{st.session_state.bmi_result}]')
-st.markdown(f'#### :black[{txt}]')
-   
+st.markdown(f'## :orange[{st.session_state.bmi_result}]')        
 
+
+
+st.session_state
 
 
 
