@@ -37,6 +37,14 @@ https://youtube.com/live/dzzVhZHkQnU
 #### [2024_06_15_下午]
 https://youtube.com/live/gfHbufqnVTw
 
+#### [2024_06_22_早上]
+https://youtube.com/live/P22WB-2VPJc
+
+#### [2024_06_22_下午]
+https://youtube.com/live/FeACA3EQczY
+
+
+
 
 
 
