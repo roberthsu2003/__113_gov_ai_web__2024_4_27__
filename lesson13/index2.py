@@ -14,14 +14,17 @@ else:
     data = root.model_dump()
     areas:list[str] = list(set(map(lambda value:value['行政區'],data)))
 
-    def search():
-        st.write("開始搜尋")
-
     
     def area_change():
         sarea_name = st.session_state.sarea
-        st.write(sarea_name)
-        filter(search,data)
+        st.write(sarea_name)        
+        display_data = []
+        for item in data:
+            if item['行政區'] == sarea_name:
+                display_data.append(item)
+        st.write(display_data)
+
+
 
     with st.sidebar:
         st.selectbox(":orange[請選擇行政區域:]",options=areas,on_change=area_change,key='sarea')
