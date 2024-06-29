@@ -14,16 +14,20 @@ else:
     data = root.model_dump()
     areas:list[str] = list(set(map(lambda value:value['行政區'],data)))
 
-    def area_change():
-        st.write(st.session_state.sarea)
+    def search():
+        st.write("開始搜尋")
 
-    if 'sarea' not in st.session_state:
-        st.session_state.sarea = "淡水區"
+    
+    def area_change():
+        sarea_name = st.session_state.sarea
+        st.write(sarea_name)
+        filter(search,data)
 
     with st.sidebar:
         st.selectbox(":orange[請選擇行政區域:]",options=areas,on_change=area_change,key='sarea')
     
-    st.write(st.session_state)
+    
+    st.title("台北市youbike各行政區站點資料")
 
     
 
