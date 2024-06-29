@@ -26,7 +26,7 @@ else:
                 display_data.append(item)
         with tableContainer:
             st.subheader(sarea_name)
-            st.table(data=display_data)
+            st.dataframe(data=display_data)
 
 
 
