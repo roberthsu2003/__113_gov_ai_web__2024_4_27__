@@ -15,11 +15,15 @@ else:
     areas:list[str] = list(set(map(lambda value:value['行政區'],data)))
 
     def area_change():
-        print("Hello!")
+        st.write(st.session_state.sarea)
+
+    if 'sarea' not in st.session_state:
+        st.session_state.sarea = "淡水區"
 
     with st.sidebar:
         st.selectbox(":orange[請選擇行政區域:]",options=areas,on_change=area_change,key='sarea')
-        st.session_state
+    
+    st.write(st.session_state)
 
     
 
