@@ -15,7 +15,7 @@ else:
     areas:list[str] = list(set(map(lambda value:value['行政區'],data)))
 
     st.title("台北市youbike各行政區站點資料")
-    tableContainer = st.container()
+    tableContainer = st.container(height=500,border=False)
     
     def area_change():
         sarea_name = st.session_state.sarea
@@ -25,6 +25,7 @@ else:
             if item['行政區'] == sarea_name:
                 display_data.append(item)
         with tableContainer:
+            st.subheader(sarea_name)
             st.table(data=display_data)
 
 
