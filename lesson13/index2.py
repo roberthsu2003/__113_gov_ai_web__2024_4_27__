@@ -3,6 +3,7 @@ from pydantic import BaseModel,Field,RootModel,field_validator,field_serializer
 import streamlit as st
 import source
 from source import Root
+import pandas as pd
 
 
 try:
@@ -26,7 +27,9 @@ else:
                 display_data.append(item)
         with tableContainer:
             st.subheader(sarea_name)
-            st.dataframe(data=display_data)
+            df1 = pd.DataFrame(display_data,
+                               columns=['站點名稱','日期時間','地址','總數','可借','可還'])
+            st.dataframe(data=df1)
 
 
 
