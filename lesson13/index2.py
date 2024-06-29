@@ -30,6 +30,17 @@ else:
             df1 = pd.DataFrame(display_data,
                                columns=['站點名稱','日期時間','地址','總數','可借','可還'])
             st.dataframe(data=df1)
+                        
+            
+            df0 = pd.DataFrame(display_data,
+                               columns=['站點名稱','總數'])
+            
+            st.scatter_chart(df0,
+                             x='站點名稱',
+                             y='總數',
+                             color='#00ff00',
+                             size='總數')
+            
 
             df2 = pd.DataFrame(display_data,
                                columns=['站點名稱','總數','可借'])
@@ -45,6 +56,7 @@ else:
             st.scatter_chart(df3,
                              x='站點名稱',
                              y='可還',
+                             color='#ff0000',
                              size='可還')
 
 
