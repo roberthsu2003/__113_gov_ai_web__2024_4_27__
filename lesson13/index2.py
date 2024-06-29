@@ -27,16 +27,18 @@ else:
 
         st.title("新北市youbike各行政區站點資料")
             
-        st.subheader(sarea_name)
-        col1, col2 = st.columns([3, 2])
-        with col1:
+        
+        col1, col2 = st.columns([1, 6])
+        with col2:
             df1 = pd.DataFrame(display_data,
                             columns=['站點名稱','總數','可借','可還'])
             st.dataframe(data=df1)
 
+        with col1:
+            st.subheader(sarea_name)
+
         tableContainer = st.container(border=False)
-        with tableContainer:
-            
+        with tableContainer:  
                         
             
             df0 = pd.DataFrame(display_data,
